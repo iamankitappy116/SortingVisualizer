@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sorting Visualizer</title>
+        <meta name="description" content="Sorting Algorithm Visualizer">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="home.css">
+        <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header id="header" class="text-center">
+            <h1>Sorting Visualizer</h1>
+        </header>
+        
+        <main id="main-content">
+            <section id="sorting-panel" class="d-flex justify-content-center align-items-center">
+                <div id="sort-container"></div>
+            </section>
+            
+            <section id="controls">
+                <form class="d-flex flex-wrap justify-content-center align-items-center">
+                    <div class="form-group d-flex align-items-center mx-3">
+                        <label for="list" id="label" class="mr-3">Choose Algorithm:</label>
+                        <select name="" id="list" class="form-control">
+                            <option value="bubble">Bubble Sort</option>
+                            <option value="selection">Selection Sort</option>
+                            <option value="insertion">Insertion Sort</option>
+                            <option value="merge">Merge Sort</option>
+                            <option value="quick">Quick Sort</option>
+                            <option value="count">Counting Sort</option>
+                        </select>    
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary" id="init">Sort</button>
+                        <button type="button" class="btn btn-secondary" id="shuffle">Shuffle</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="home.js" async defer></script>
+    </body>
+</html>
+

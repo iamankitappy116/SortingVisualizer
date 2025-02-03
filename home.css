@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+    background-color: #121212;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+
+h1, h5 {
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* Header */
+#header {
+    width: 100%;
+    background-color: #1e1e1e;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#header h1 {
+    font-size: 1.8rem;
+    color: #ff9800; /* Changed to a warm orange */
+}
+
+/* Sorting Panel */
+#sorting-panel {
+    height: 60vh;
+    background-color: #1c1c1c;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+#sort-container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+
+.bar {
+    width: 6px;
+    background-color: #ff5722; /* Changed to a darker orange */
+    margin: 0 1px;
+    transition: height 0.3s ease;
+}
+
+.bar:hover {
+    background-color: #ff7043; /* Lighter orange for hover */
+}
+
+/* Controls */
+#controls {
+    background-color: #1e1e1e;
+    padding: 15px 0;
+    border-radius: 10px;
+    margin: 0 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+#controls form {
+    display: flex;
+    flex-direction: column; /* Stacks the elements vertically */
+    align-items: center; /* Ensures center alignment */
+    gap: 10px; /* Adds space between form elements */
+    flex-wrap: wrap; /* Allows elements to wrap if needed */
+}
+
+/* Dropdown */
+#label {
+    font-size: 1rem;
+    color: #cccccc;
+    margin-right: 10px; /* Adds space between the label and select box */
+}
+
+#list {
+    width: 200px;
+    background-color: #2b2b2b;
+    color: #ffffff;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    outline: none;
+    display: inline-block;
+}
+
+button#init {
+    background-color: #ff9800; /* Changed to match orange theme */
+    color: #ffffff;
+    border: none;
+}
+
+button#init:hover {
+    background-color: #fb8c00; /* Darker shade of orange */
+}
+
+button#shuffle {
+    background-color: #ff5722; /* Changed to a matching orange shade */
+    color: #ffffff;
+    border: none;
+}
+
+button#shuffle:hover {
+    background-color: #f4511e; /* Darker shade of orange */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .bar {
+        width: 4px;
+    }
+
+    #controls form {
+        gap: 10px; /* Reduce gap between elements on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .bar {
+        width: 3px;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 0.8rem;
+    }
+
+    #controls form {
+        gap: 5px; /* Further reduce gap on mobile */
+    }
+}
